@@ -7,6 +7,7 @@ export default function App() {
   store.subscribe(() => {
     console.log("store changed", store.getState());
   })
+  
   store.dispatch(actionsCreator("bug 1"))
 
   // store.dispatch()
