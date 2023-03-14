@@ -2,7 +2,6 @@
 import store from "./store"
 import { actionsCreator, actionsResolver } from './actions'
 
-
 export default function App() {
 
   store.dispatch(actionsCreator("bug 1"))
@@ -10,4 +9,3 @@ export default function App() {
 
   console.log(store.getState());
 }
-
