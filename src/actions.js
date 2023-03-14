@@ -9,7 +9,7 @@ export function actionsCreator(desc) {
       }
 }
 
-export default function actionsRemover(id) {
+export function actionsRemover(id) {
     return {
       type: actions.Bug_Removed,
       payload: {
@@ -17,3 +17,10 @@ export default function actionsRemover(id) {
       }
     }
 }
+
+export const actionsResolver = id => ({
+  type: actions.Bug_Resolved,
+      payload: {
+        id
+      }
+})
